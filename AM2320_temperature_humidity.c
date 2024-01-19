@@ -33,7 +33,7 @@
 #define F_CPU 16000000	// Clock frequency of CPU
 #include <util/delay.h>
 #include "AM2320_temperature_humidity.h"
-#include "../pFleury_i2c_stuff/i2cmaster.h"
+#include "i2cmaster.h"
 
 /*
 *	AM2320_init()
