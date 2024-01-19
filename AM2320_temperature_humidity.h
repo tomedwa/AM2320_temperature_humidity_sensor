@@ -12,8 +12,18 @@
  * AM2320_init() - Initialise the AM2320.
  * AM2320_update_temperature_humidity() - Update the current
  * readings for temperature and humidity.
- * AM2320_get_temperature() - Get the current reading for temp.
- * AM2320_get_humidity() - Get current reading for humidity.
+ * AM2320_get_temperature_float_celsius() - Get the current 
+ * reading for temp as a float in degrees Celsius.
+ * AM2320_get_temperature_float_fahrenheit() - Get the current
+ * reading for temp as a float in degrees Fahrenheit.
+ * AM2320_get_humidity_float() - Get current reading for
+ * humidity as a float.
+ * AM2320_get_temperature_string_celsius() - Get current reading 
+ * for temperature as a string in degrees Celsius.
+ * AM2320_get_temperature_string_fahrenheit() - Get current 
+ * reading for temperature as a string in degrees Fahrenheit.
+ * AM2320_get_humidity_string() - Get current reading for
+ * humidity as a string.
  **************************************************************
 */
 
@@ -34,7 +44,11 @@ float TEMPERATURE_HUMIDITY[2];
 
 void AM2320_init();
 void AM2320_update_temperature_humidity();
-float AM2320_get_temperature();
-float AM2320_get_humidity();
+float AM2320_get_temperature_float_celsius();
+float AM2320_get_temperature_float_fahrenheit();
+float AM2320_get_humidity_float();
+char* AM2320_get_temperature_string_celsius();
+char* AM2320_get_temperature_string_fahrenheit();
+char* AM2320_get_humidity_string();
 
 #endif /* AM2320_TEMPERATURE_HUMIDITY_H_ */
