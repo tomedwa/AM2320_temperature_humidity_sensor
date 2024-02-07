@@ -6,8 +6,6 @@
  * AVR Library for the AM2320 temperature and humidity
  * sensor. This lib requires the Peter Fleury i2cmaster 
  * interface.
- * NOTE: Any variable or function starting with an underscore is
- * private use inside this library.
  **************************************************************
  * EXTERNAL FUNCTIONS
  **************************************************************
@@ -16,12 +14,8 @@
  * readings for temperature and humidity.
  * AM2320_get_temperature_float_celsius() - Get the current
  * reading for temp as a float in degrees Celsius.
- * AM2320_get_temperature_float_fahrenheit() - Get the current
- * reading for temp as a float in degrees Fahrenheit.
  * AM2320_get_temperature_string_celsius() - Get current reading
  * for temperature as a string in degrees Celsius.
- * AM2320_get_temperature_string_fahrenheit() - Get current
- * reading for temperature as a string in degrees Fahrenheit.
  * AM2320_get_humidity_float() - Get current reading for
  * humidity as a float.
  * AM2320_get_humidity_string() - Get current reading for
